@@ -9,12 +9,7 @@ class Mailer:
         requests.post(
             "https://api.mailgun.net/v3/{}/messages".format(self.domain_name),
             auth=("api", self.api_key),
-            data={
-                "from": email['from'],
-                "to": email['to'],
-                "subject": email['subject'],
-                "text": email['text']
-            }
+            data=email
         )
 
 def mailer(request):
