@@ -5,7 +5,7 @@ except ImportError:
 
 setup(
     name='pyramid_mailgun',
-    version='0.0.2dev',
+    version='0.0.2',
     packages=['pyramid_mailgun',],
     description='Mailgun integration for Pyramid framework',
     author='Evan Nook',
